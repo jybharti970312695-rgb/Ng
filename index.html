@@ -7,6 +7,10 @@
     <meta name="theme-color" content="#2196F3" />
     <meta name="description" content="Gopi Distributors Pharma Billing System" />
     <title>Gopi Pharma Billing v2.0</title>
+    <!-- Fonts: Roboto for Android, Inter/Segoe UI approximation for Windows -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -20,6 +24,9 @@
             },
             borderRadius: {
               DEFAULT: 'var(--radius)',
+            },
+            fontFamily: {
+              sans: 'var(--font-family)',
             }
           }
         }
@@ -28,18 +35,18 @@
   <script type="importmap">
 {
   "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
     "dexie": "https://esm.sh/dexie@^4.2.1",
-    "zustand": "https://esm.sh/zustand@^5.0.9",
-    "xlsx": "https://esm.sh/xlsx@^0.18.5",
     "fuse.js": "https://esm.sh/fuse.js@^7.1.0",
-    "dexie-react-hooks": "https://esm.sh/dexie-react-hooks@^4.2.0",
     "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
     "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
     "vite": "https://esm.sh/vite@^7.3.0",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "zustand": "https://esm.sh/zustand@^5.0.9",
+    "xlsx": "https://esm.sh/xlsx@^0.18.5",
+    "dexie-react-hooks": "https://esm.sh/dexie-react-hooks@^4.2.0"
   }
 }
 </script>
